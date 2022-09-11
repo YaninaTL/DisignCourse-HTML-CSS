@@ -112,6 +112,8 @@ section.hero {
         position: absolute;
         bottom: 2em;
         width: 1em;
+        // Add animation
+        animation: moveArrow 1s alternate-reverse infinite;
         
         path {
             // fill: white;
@@ -264,4 +266,17 @@ section.hero {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     // Can be done with transition
+}
+
+@keyframes moveArrow {
+    from {
+        transform: translateY(-30px);
+        
+    }
+    to {
+        transform: translateY(0);
+    }
+    // Going up and down
+
+    // NEED TO ADD MQ TO BIGGER RESOLUTION!
 }
