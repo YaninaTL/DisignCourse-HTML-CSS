@@ -91,6 +91,9 @@ h1 {
 section.hero {
   color: black;
   height: 90vh;
+  -webkit-animation: moveDown 1s ease-in-out forwards;
+          animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
 }
 section.hero .down-arrow {
   position: absolute;
@@ -221,5 +224,23 @@ section.hero .down-arrow {
   }
   to {
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */

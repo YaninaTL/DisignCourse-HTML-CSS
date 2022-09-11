@@ -106,6 +106,9 @@ h1 {
 section.hero {
     color: black;
     height: 90vh;
+    // Add animation
+    animation: moveDown 1s ease-in-out forwards;
+    opacity: 0;
 
     .down-arrow {
         // stroke: white;
@@ -278,5 +281,16 @@ section.hero {
     }
     // Going up and down
 
-    // NEED TO ADD MQ TO BIGGER RESOLUTION!
+    // NEED TO ADD MQ for padding TO BIGGER RESOLUTION!
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(-100px);
+        
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
