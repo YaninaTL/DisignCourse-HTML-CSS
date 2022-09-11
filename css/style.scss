@@ -31,6 +31,8 @@ a {
     width: 100%;
     height: 100vh;
     z-index: -1;
+// Add animation -> keyframes in the bottom
+    animation: introLoad 2s forwards;
 }
 
 .logo {
@@ -251,4 +253,15 @@ section.hero {
 .feature {
     gap: 0;
 }
+}
+
+@keyframes introLoad {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    // Can be done with transition
 }
