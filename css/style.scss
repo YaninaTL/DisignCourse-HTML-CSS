@@ -9,7 +9,7 @@
 }
 
 body {
-    background: bisque;
+    background: rgba(200, 191, 179, 0.6);
     font-family: 'Josefin Slab', serif;
     margin: 1.5em;
     // Use em to make more responsive while zooming the browser
@@ -94,8 +94,14 @@ h1 {
     line-height: 3.3rem;
 }
 
+
 .subhead {
     font-size: 1.4rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    // color: rgba(200, 191, 179);
+    color: rgb(234, 223, 202);
+
+    // Find better style?
 }
 
 section.hero {
@@ -114,3 +120,27 @@ section.hero {
 
     }
 }
+
+.more-info {
+
+    img {
+        width: 100%;
+        // Help fit all the img
+        object-fit: cover;
+        height: 15em;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .desc {
+        line-height: 1.5rem;
+    }
+}
+
+// Finish mobile css
+

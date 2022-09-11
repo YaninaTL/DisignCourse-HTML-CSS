@@ -6,7 +6,7 @@
 }
 
 body {
-  background: bisque;
+  background: rgba(200, 191, 179, 0.6);
   font-family: "Josefin Slab", serif;
   margin: 1.5em;
 }
@@ -83,6 +83,8 @@ h1 {
 
 .subhead {
   font-size: 1.4rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(234, 223, 202);
 }
 
 section.hero {
@@ -93,4 +95,19 @@ section.hero .down-arrow {
   position: absolute;
   bottom: 2em;
   width: 1em;
+}
+.more-info img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 15em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.more-info .title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.more-info .desc {
+  line-height: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
