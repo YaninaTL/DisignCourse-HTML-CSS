@@ -83,8 +83,7 @@ h1 {
 
 .subhead {
   font-size: 1.4rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: rgb(234, 223, 202);
+  background-color: rgba(250, 240, 229, 0.5);
 }
 
 section.hero {
@@ -110,4 +109,78 @@ section.hero .down-arrow {
 }
 .more-info .desc {
   line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav svg.close {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    color: black;
+    padding: 0.5em 1.5em;
+    font-size: 1.1rem;
+    font-weight: 550;
+  }
+  nav ul a:hover {
+    background: rgba(250, 240, 229, 0.5);
+  }
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+  }
+  .logo span {
+    color: rgb(160, 70, 55);
+  }
+  section.hero {
+    max-width: 45%;
+    height: auto;
+    margin-bottom: 8em;
+  }
+  section.hero svg.down-arrow {
+    position: unset;
+  }
+  .feature {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    padding-top: 8em;
+  }
+  .feature img {
+    width: 25em;
+  }
+  .feature .content {
+    text-align: right;
+    width: 25em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .feature {
+    gap: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
