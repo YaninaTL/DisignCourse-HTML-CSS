@@ -1,0 +1,12 @@
+html {
+  font-size: 62.5%;
+}
+/* = 10px
+This technique is often used as a way to establish a consistent baseline font size for a web page. By using 10px as the base font size, it becomes easier to calculate font sizes in rem (root em) units. For example, if you want to set the font size of a specific element to 1.6rem, it will be equal to 16px (since 1rem is equal to the base font size).
+
+By starting with a relative font size like 62.5%, you can maintain a flexible and consistent typography system that adjusts well to different devices and screen sizes while still allowing you to work with pixel-based measurements when needed.*/
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
