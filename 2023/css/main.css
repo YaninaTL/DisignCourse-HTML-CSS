@@ -10,3 +10,57 @@ body {
   margin: 0;
   font-family: "Poppins";
 }
+
+.wrapper {
+  max-width: 1200px;
+  /* according to figma */
+  margin: 0 auto;
+  /* to center elements */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* to have a gap between the logo and links */
+  align-items: center;
+}
+
+nav {
+  margin: 4em;
+  /* = 40px */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 4.1em;
+  /* justify-content: space-between; - instead we use gab*/
+  /* align-items: center; -not necessary */
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  position: relative;
+  /* rem for text
+em for margins */
+  /* REM - relative to the root font size; hanging the root font size (e.g., on the html element) can quickly adjust all font sizes in your layout; users can easily adjust the root font size in their browser settings to increase or decrease text size without breaking the layout. */
+
+  /* EM - based on the font size of the nearest parent element; allows for contextual sizing, where the size should be relative to the font size of a nearby element;adapt to changes in font size;
+  !!! if we set a margin or padding to 1em, it will be equal to the font size of that parent element. */
+}
+
+/* adding underline to HOME as an active page */
+nav ul li a.active:before {
+  position: absolute;
+  /* we need position RELATIVE in our parent "nav ul li a"*/
+  content: "";
+  width: 35%;
+  /* according figma */
+  height: 1px;
+  border-bottom: 2px solid black;
+  bottom: -5px;
+}
