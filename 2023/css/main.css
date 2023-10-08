@@ -130,6 +130,10 @@ h1 {
   padding: 1em 2em;
 }
 
+.primary-cta:hover {
+  background: #e3e0c7;
+}
+
 .secondary-cta {
   font-size: 1.8rem;
   text-decoration: none;
@@ -138,9 +142,20 @@ h1 {
   padding: 1em 0;
 }
 
+.secondary-cta:hover {
+  text-decoration: underline;
+}
+
 .secondary-cta svg {
   width: 20px;
   align-items: center;
+
+  transition: transform 0.3s;
+  /* a property for the transform while hovering */
+}
+
+.secondary-cta:hover svg {
+  transform: translateX(10px);
 }
 
 .news {
@@ -251,5 +266,3 @@ p.details {
 p.product-price {
   font-size: 1.8rem;
 }
-
-/* Mictointeractions */
