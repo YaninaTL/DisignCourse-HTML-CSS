@@ -7,14 +7,14 @@ This technique is often used as a way to establish a consistent baseline font si
 By starting with a relative font size like 62.5%, you can maintain a flexible and consistent typography system that adjusts well to different devices and screen sizes while still allowing you to work with pixel-based measurements when needed.*/
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Poppins";
 }
 
 .wrapper {
   max-width: 1200px;
   /* according to figma */
-  margin: 0 auto;
+  margin: 0 50px;
   /* to center elements */
 }
 
@@ -192,8 +192,6 @@ p.details {
   margin: 0;
 }
 
-/* need to fix a margin */
-
 .right-col {
   display: grid;
   gap: 2.3em;
@@ -207,7 +205,7 @@ p.details {
 
 .card1 {
   grid-area: left;
-  background-image: url(../img/clothing3.jpg);
+  background: url(../img/clothing3.jpeg);
   /* code for the tag */
   position: relative;
 }
@@ -224,10 +222,10 @@ p.details {
   /* make nonclickable */
 }
 .card2 {
-  background-image: url(../img/clothing1.jpg);
+  background: url(../img/clothing1.jpeg);
 }
 .card3 {
-  background-image: url(../img/clothing2.jpg);
+  background-image: url(../img/clothing2.jpeg);
 }
 
 .card {
@@ -237,9 +235,13 @@ p.details {
   align-items: end;
   /* items at the bottom */
   background-size: 180%;
+
+  transition: background-size 800ms;
 }
 
-/* need to fix img */
+.card:hover {
+  background-size: 200%;
+}
 
 .card-details {
   background: white;
