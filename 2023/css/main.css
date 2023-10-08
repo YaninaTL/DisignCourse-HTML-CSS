@@ -277,3 +277,25 @@ p.details {
 p.product-price {
   font-size: 1.8rem;
 }
+
+.overlay {
+  position: absolute;
+  /* goes on top of everything */
+  z-index: 999;
+  background: white;
+  width: 100%;
+  height: 100%;
+  animation: reveal 1s ease-in forwards;
+  /* name - duration - type - direction */
+  transform-origin: bottom;
+  /* goes from the top to he bottom */
+}
+
+@keyframes reveal {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
