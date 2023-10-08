@@ -120,7 +120,8 @@ h1 {
 
 .primary-cta {
   background-color: #f2f0df;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  text-align: center;
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -128,6 +129,8 @@ h1 {
   border-radius: 1.9em;
   /* according to figma */
   padding: 1em 2em;
+
+  margin: auto;
 }
 
 .primary-cta:hover {
@@ -135,7 +138,7 @@ h1 {
 }
 
 .secondary-cta {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: black;
   display: block;
@@ -205,7 +208,7 @@ p.details {
 
 .card1 {
   grid-area: left;
-  background: url(../img/clothing3.jpeg);
+  background: url(../img/clothing3.jpg);
   /* code for the tag */
   position: relative;
 }
@@ -222,10 +225,10 @@ p.details {
   /* make nonclickable */
 }
 .card2 {
-  background: url(../img/clothing1.jpeg);
+  background: url(../img/clothing1.jpg);
 }
 .card3 {
-  background-image: url(../img/clothing2.jpeg);
+  background-image: url(../img/clothing2.jpg);
 }
 
 .card {
@@ -249,6 +252,7 @@ p.details {
   padding: 2em;
   width: 100%;
   display: flex;
+  gap: 10px;
   align-items: center;
   justify-content: space-between;
 }
