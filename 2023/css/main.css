@@ -255,6 +255,11 @@ p.details {
   gap: 10px;
   align-items: center;
   justify-content: space-between;
+
+  transition: transform 800ms;
+}
+.card:hover .card-details {
+  transform: translateY(-20px);
 }
 
 .card-details a {
