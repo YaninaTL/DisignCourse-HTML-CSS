@@ -65,6 +65,21 @@ nav ul li a.active:before {
   bottom: -5px;
 }
 
+nav ul li a:before {
+  position: absolute;
+  /* we need position RELATIVE in our parent "nav ul li a"*/
+  content: "";
+  width: 0%;
+  /* according figma */
+  height: 1px;
+  border-bottom: 2px solid darkgrey;
+  bottom: -5px;
+  transition: width 0.3s;
+}
+nav ul li a:hover:before {
+  width: 35%; /* Change the width to a visible value on hover */
+}
+
 /* HERO */
 main {
   display: flex;
@@ -236,3 +251,5 @@ p.details {
 p.product-price {
   font-size: 1.8rem;
 }
+
+/* Mictointeractions */
