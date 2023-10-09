@@ -129,8 +129,6 @@ h1 {
   border-radius: 1.9em;
   /* according to figma */
   padding: 1em 2em;
-
-  margin: auto;
 }
 
 .primary-cta:hover {
@@ -299,3 +297,23 @@ p.product-price {
     transform: scaleY(0);
   }
 }
+
+main {
+  animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  transform: scale(0.4);
+}
+
+@keyframes growIn {
+  to {
+    transform: scale(1);
+    /* to initial one */
+  }
+}
+
+/* check btns
+have smth with the margins */
+
+/* not responsive */
+
+/* check animation of the card
+review one more time */
